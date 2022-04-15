@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="../favicon/favicon.ico">
     <!-- Font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -56,58 +58,60 @@
     <!-- Main -->
     <main>
         <section class="section1">
-            <h1 class="h1Carrier">OFERTA DEL MES: Transportador para Gato</h1>
-            <form class="form" action="" method="get">
-                <legend class="shortText">Completa el formulario para comprar el transportador para tu gato</legend>
-                <div>
-                    <label for="name">Nombre</label>
-                    <input id="name" type="text" name="name" class="form-inputs" required>
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email" class="form-inputs" required>
-                </div>
-                <div>
-                    <label for="dropdown">Selecciona el modelo</label>
-                    <select id="dropdown" class="form-inputs" required>
-                        <option value="" hidden selected>Elije un modelo</option>
-                        <option value="Model_1">Transportador de plástico - $950</option>
-                        <option value="Model_2">Transportador de tela - $700</option>
-                    </select>
-                    <img src="../img/cat-carrier.jpg" alt="transportador-de-plástico" class="images">
-                    <img src="../img/carrier.jpeg" alt="transportador-de-tela" class="images">
-                </div>
-                <div class="storeDiv">
-                    <label for="model_color" class="shortText">Color:</label>
+            <div class="animate__animated animate__fadeInUp">
+                <h1 class="h1Carrier">Transportador para Gato</h1>
+                <form class="form" action="" method="get">
+                    <legend class="shortText">Completa el formulario para comprar el transportador para tu gato</legend>
                     <div>
-                        <input type="radio" name="color" id="black" value="black">
-                        <label for="black">Negro</label>
+                        <label for="name">Nombre</label>
+                        <input id="name" type="text" name="name" class="form-inputs" required>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" class="form-inputs" required>
                     </div>
                     <div>
-                        <input type="radio" name="color" id="green" value="green">
-                        <label for="green">Verde</label>
+                        <label for="dropdown">Selecciona el modelo</label>
+                        <select id="dropdown" class="form-inputs" required>
+                            <option value="" hidden selected>Elije un modelo</option>
+                            <option value="Model_1">Transportador de plástico - $950</option>
+                            <option value="Model_2">Transportador de tela - $700</option>
+                        </select>
+                        <img src="../img/cat-carrier.jpg" alt="transportador-de-plástico" class="images">
+                        <img src="../img/carrier.jpeg" alt="transportador-de-tela" class="images">
                     </div>
-                    <div>
-                        <input type="radio" name="color" id="blue" value="blue">
-                        <label for="blue">Azul</label>
+                    <div class="storeDiv">
+                        <label for="model_color" class="shortText">Color:</label>
+                        <div>
+                            <input type="radio" name="color" id="black" value="black">
+                            <label for="black">Negro</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color" id="green" value="green">
+                            <label for="green">Verde</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color" id="blue" value="blue">
+                            <label for="blue">Azul</label>
+                        </div>
                     </div>
-                </div>
-                <div class="storeDiv">
-                    <label for="features" class="shortText">Agrega accesorios:</label>
-                    <div>
-                        <input type="checkbox" name="features" id="mouse" value="mouse">
-                        <label for="mouse">Juguete Ratón - $150</label>
+                    <div class="storeDiv">
+                        <label for="features" class="shortText">Agrega accesorios:</label>
+                        <div>
+                            <input type="checkbox" name="features" id="mouse" value="mouse">
+                            <label for="mouse">Juguete Ratón - $150</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="features" id="bird" value="bird">
+                            <label for="bird">Juguete Pájaro - $150</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox" name="features" id="bird" value="bird">
-                        <label for="bird">Juguete Pájaro - $150</label>
+                    <div class="storeDiv">
+                        <label for="textareaComments" class="shortText">Comentarios adicionales:</label>
+                        <textarea id="textareaComments" name="instructions" class="textarea"></textarea>
+                        <button type="submit" class="form-button">Comprar</button>
+                        <button type="reset" class="form-button secondButton">Limpiar</button>
                     </div>
-                </div>
-                <div class="storeDiv">
-                    <label for="textareaComments" class="shortText">Comentarios adicionales:</label>
-                    <textarea id="textareaComments" name="instructions" class="textarea"></textarea>
-                    <button type="submit" class="form-button">Comprar</button>
-                    <button type="reset" class="form-button secondButton">Limpiar</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </section>
     </main>
 
