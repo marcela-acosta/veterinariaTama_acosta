@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="../favicon/favicon.ico">
     <!-- Font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -56,23 +58,25 @@
     <!-- Main -->
     <main>
         <section class="section3">
-            <h1>Ingresar</h1>
-            <form class="form" action="" method="get">
-                <div class="boxLogin">
-                    <p>
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" class="form-inputs" required>
-                    </p>
-                    <p>
-                        <label for="password">Contraseña</label>
-                        <input id="password" type="password" name="password" class="form-inputs" required>
-                    </p>
-                    <p class="pPassword"><a class="a-link" href="#">¿Olvidó su contraseña?</a>
-                    </p>
-                    <button type="submit" class="form-button">Ingresar</button>
-                    <button type="button" class="form-button secondButton">Registrarse</button>
-                </div>
-            </form>
+            <div class="animate__animated animate__fadeInUp">
+                <h1 class="h1Login">Ingresar</h1>
+                <form class="form" action="" method="get">
+                    <div class="boxLogin">
+                        <p>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" class="form-inputs" required>
+                        </p>
+                        <p>
+                            <label for="password">Contraseña</label>
+                            <input id="password" type="password" name="password" class="form-inputs" required>
+                        </p>
+                        <p class="pPassword"><a class="a-link" href="#">¿Olvidó su contraseña?</a>
+                        </p>
+                        <button type="submit" class="form-button">Ingresar</button>
+                        <button type="button" class="form-button secondButton">Registrarse</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
