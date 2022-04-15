@@ -91,7 +91,7 @@ input#menu:checked~.navbar {
 }
 
 .nav-item:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.2);
 }
 
 .nav-link {
@@ -226,6 +226,11 @@ h1 {
     grid-area: atencion;
     display: flex;
     align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.h1_index:hover {
+    transform: scale(1.2);
 }
 
 h2 {
@@ -328,6 +333,15 @@ h2 {
 /* FIN MAIN INDEX */
 
 /* INICIO MAIN INGRESAR */
+.h1login {
+    transition: all 300ms ease-in-out;
+}
+
+.h1Login:hover {
+    color: #f37a5f;
+    transform: scale(1.2);
+}
+
 .form {
     padding: 30px;
     width: 50%;
@@ -412,13 +426,22 @@ h2 {
 /* INICIO MAIN TIENDA */
 .images {
     width: 49%;
+    transition: all 300ms ease-in-out;
+}
+
+.images:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.h1Carrier {
+    transition: all 300ms ease-in-out;
 }
 
 .h1Carrier:hover {
     color: #f37a5f;
-    transform: scale(1.2, 1.2);
-    background-color: #ccc;
-    transition: all 300ms;
+    transform: scale(1.2);
+    background-color: rgb(246, 234, 234);
 }
 
 .shortText {
@@ -456,6 +479,9 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     height: 450px;
+    animation-name: shake;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
 }
 
 .div2Travel {
@@ -466,6 +492,13 @@ h2 {
 
 .h1Travel {
     text-align: center;
+    transition: all 300ms ease-in-out;
+}
+
+.h1Travel:hover,
+.captionText:hover {
+    color: #6db3b4;
+    transform: scale(1.2);
 }
 
 .pTravel {
@@ -477,6 +510,7 @@ h2 {
     margin: 20px 0;
     text-align: center;
     font-size: 1.5rem;
+    transition: all 300ms ease-in-out;
 }
 
 .tableTravel {
@@ -487,6 +521,20 @@ h2 {
     border-color: #1989bd;
     text-align: center;
     font-size: 1.3rem;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
 }
 
 /* Media queries */
@@ -529,9 +577,15 @@ h2 {
     background-color: #f6f0eb;
 }
 
-ul {
+.ulContact {
     list-style: none;
     padding: 10px 0;
+    transition: all 300ms ease-in-out;
+}
+
+.ulContact:hover {
+    transform: scale(1.2);
+    background-color: rgb(246, 234, 234);
 }
 
 ul li {
@@ -572,18 +626,19 @@ ul li {
 
 .formContact button {
     background: #ed494a;
+    background: linear-gradient(90deg, rgba(237, 73, 74, 1) 0%, rgba(245, 123, 123, 1) 35%, rgba(237, 73, 74, 1) 100%);
     border: 0;
     font-size: 1.1rem;
     color: white;
     border-radius: 10px;
     font-family: 'Ubuntu', sans-serif;
+    transition: background-color 1s ease-out;
 }
 
 .formContact button:hover,
 .formContact button:focus {
     background: #f29e9c;
     color: #fff;
-    transition: background-color 1s ease-out;
     outline: 0;
 }
 
@@ -607,6 +662,13 @@ ul li {
 }
 
 /* Media queries */
+
+@media screen and (max-width: 768px) {
+    .blockMobile {
+        grid-column: 1 / 3;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .contact-wrapper>* {
         padding: 1rem;
@@ -639,6 +701,12 @@ footer {
 
 .social-icon {
     margin: 20px 10px;
+    transition: all 300ms ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(3) translateY(-3px);
+    color: #37bcf9;
 }
 
 /* FIN FOOTER */
