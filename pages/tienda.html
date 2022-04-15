@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Tama</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <!-- Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="divLogo">
+            <a href="../index.html">
+                <img class="logo" src="../img/logo.svg" alt="logo">
+            </a>
+        </div>
+        <label for="menu" class="burgerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="navbar">
+            <label for="menu" class="closeMenu">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ingresar.html">Ingresar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="section1">
+            <h1 class="h1Carrier">OFERTA DEL MES: Transportador para Gato</h1>
+            <form class="form" action="" method="get">
+                <legend class="shortText">Completa el formulario para comprar el transportador para tu gato</legend>
+                <div>
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" name="name" class="form-inputs" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" class="form-inputs" required>
+                </div>
+                <div>
+                    <label for="dropdown">Selecciona el modelo</label>
+                    <select id="dropdown" class="form-inputs" required>
+                        <option value="" hidden selected>Elije un modelo</option>
+                        <option value="Model_1">Transportador de plástico - $950</option>
+                        <option value="Model_2">Transportador de tela - $700</option>
+                    </select>
+                    <img src="../img/cat-carrier.jpg" alt="transportador-de-plástico" class="images">
+                    <img src="../img/carrier.jpeg" alt="transportador-de-tela" class="images">
+                </div>
+                <div class="storeDiv">
+                    <label for="model_color" class="shortText">Color:</label>
+                    <div>
+                        <input type="radio" name="color" id="black" value="black">
+                        <label for="black">Negro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" id="green" value="green">
+                        <label for="green">Verde</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" id="blue" value="blue">
+                        <label for="blue">Azul</label>
+                    </div>
+                </div>
+                <div class="storeDiv">
+                    <label for="features" class="shortText">Agrega accesorios:</label>
+                    <div>
+                        <input type="checkbox" name="features" id="mouse" value="mouse">
+                        <label for="mouse">Juguete Ratón - $150</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="features" id="bird" value="bird">
+                        <label for="bird">Juguete Pájaro - $150</label>
+                    </div>
+                </div>
+                <div class="storeDiv">
+                    <label for="textareaComments" class="shortText">Comentarios adicionales:</label>
+                    <textarea id="textareaComments" name="instructions" class="textarea"></textarea>
+                    <button type="submit" class="form-button">Comprar</button>
+                    <button type="reset" class="form-button secondButton">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <a href="#" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="social-icon fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="social-icon fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="social-icon fas fa-envelope"></i></a>
+            <p>© Copyright 2022 Veterinaria Tama</p>
+            <p>Made with ❤ by <a class="a-link" href="#">Marcela Acosta</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
