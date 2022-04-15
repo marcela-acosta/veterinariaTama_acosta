@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Tama</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <!-- Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="divLogo">
+            <a href="../index.html">
+                <img class="logo" src="../img/logo.svg" alt="logo">
+            </a>
+        </div>
+        <label for="menu" class="burgerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="navbar">
+            <label for="menu" class="closeMenu">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ingresar.html">Ingresar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <section class="sectionContact">
+            <div class="contact-wrapper">
+                <div>
+                    <h1 class="h1Contact">Contáctate con nosotros</h1>
+                    <form class="formContact" action="" method="get">
+                        <p>
+                            <label for="name">Nombre</label>
+                            <input id="name" type="text" name="name" required>
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="phone">Teléfono</label>
+                            <input id="phone" type="number" name="phone">
+                        </p>
+                        <p>
+                            <label for="topic">Asunto</label>
+                            <input id="topic" type="text" name="topic">
+                        </p>
+                        <p class="block">
+                            <label for="textarea">Déjanos tu mensaje:</label>
+                            <textarea id="textarea" name="instructions" class="textarea" required></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Más información</h2>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Cno. Carrasco 5975</li>
+                        <li><i class="fas fa-phone"></i> (+598) 22446688</li>
+                        <li><i class="fas fa-envelope-open-text"></i> contacto@veterinariatama.com</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam sapiente molestias quae
+                        vitae dicta, voluptatem illum iusto voluptates ad consectetur fugiat, eos nam consequuntur
+                        asperiores minus hic minima doloribus!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <a href="#" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="social-icon fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="social-icon fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="social-icon fas fa-envelope"></i></a>
+            <p>© Copyright 2022 Veterinaria Tama</p>
+            <p>Made with ❤ by <a class="a-link" href="#">Marcela Acosta</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
