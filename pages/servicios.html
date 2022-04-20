@@ -15,6 +15,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap CDN Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -22,87 +25,106 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="divLogo">
-            <a href="../index.html">
-                <img class="logo" src="../img/logo.svg" alt="logo">
-            </a>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light ulList">
+                <div class="divLogo">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo" src="../img/logoSmall.svg" alt="logo">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ingresar.html">Ingresar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <label for="menu" class="burgerMenu">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" id="menu">
-        <nav class="navbar">
-            <label for="menu" class="closeMenu">
-                <i class="fa-solid fa-circle-xmark"></i>
-            </label>
-            <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ingresar.html">Ingresar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tienda.html">Tienda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Main -->
     <main>
-        <section class="section1 section1Travel">
-            <div class="div1Travel"></div>
-            <div class="div2Travel animate__animated animate__fadeInUp">
-                <h1 class="h1Travel">Viaja con tu gato</h1>
-                <p class="p-content pTravel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, natus
-                    aut
-                    error, ullam ratione, maiores ipsa quas recusandae voluptatum adipisci voluptas fugiat ab similique
-                    incidunt a aliquid minima deserunt? At!
-                    Adipisci qui laudantium voluptates! Officia id nobis ipsam asperiores similique earum, error rem eum
-                    veritatis quae reprehenderit laudantium maxime ea optio laborum delectus, necessitatibus sint
-                    doloremque
-                    aliquam laboriosam autem perferendis.</p>
-                <p class="p-content pTravel">Autem dignissimos necessitatibus, ex alias asperiores impedit nisi non
-                    repellendus qui, quis perferendis
-                    aut ratione recusandae debitis aperiam sed, delectus quasi. Dolore, facilis error recusandae
-                    reprehenderit deleniti quos fugit consequuntur.
-                    Praesentium id saepe laudantium sapiente possimus, ea eveniet. Ex autem corrupti dolor laborum sit
-                    soluta quas modi. Accusamus qui pariatur laborum? Deleniti facere fuga iure soluta nam at, neque
-                    deserunt!</p>
+        <section class="section1 container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="div1Travel col-xl-4 col-lg-12"></div>
+                    <div class="div2Travel animate__animated animate__fadeInUp col-xl-8 col-lg-12">
+                        <h1 class="h1Travel">Viaja con tu gato</h1>
+                        <p class="p-content pTravel">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reiciendis, natus
+                            aut
+                            error, ullam ratione, maiores ipsa quas recusandae voluptatum adipisci voluptas fugiat ab
+                            similique
+                            incidunt a aliquid minima deserunt? At!
+                            Adipisci qui laudantium voluptates! Officia id nobis ipsam asperiores similique earum, error
+                            rem eum
+                            veritatis quae reprehenderit laudantium maxime ea optio laborum delectus, necessitatibus
+                            sint
+                            doloremque
+                            aliquam laboriosam autem perferendis.</p>
+                        <p class="p-content pTravel">Autem dignissimos necessitatibus, ex alias asperiores impedit nisi
+                            non
+                            repellendus qui, quis perferendis
+                            aut ratione recusandae debitis aperiam sed, delectus quasi. Dolore, facilis error recusandae
+                            reprehenderit deleniti quos fugit consequuntur.
+                            Praesentium id saepe laudantium sapiente possimus, ea eveniet. Ex autem corrupti dolor
+                            laborum sit
+                            soluta quas modi. Accusamus qui pariatur laborum? Deleniti facere fuga iure soluta nam at,
+                            neque
+                            deserunt!</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="section2 travelSection2">
-            <div class="boxTravel">
-                <table border="1" class="tableTravel">
-                    <caption class="captionText">Requisitos para viajar con tu gato</caption>
-                    <tbody>
-                        <tr>
-                            <th>Documentos</th>
-                            <th>Microchip</th>
-                            <th>Vacunas</th>
-                        </tr>
-                        <tr>
-                            <td><a class="a-link" href="#">Certificado sanitario</a></td>
-                            <td><a class="a-link" href="#">Microchip subcutáneo</a></td>
-                            <td><a class="a-link" href="#">Rabia</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section class="section2 container-fluid">
+            <div class="container">
+                <div class="col-xl-6 col-lg-12 mx-auto">
+                    <p class="captionText">Requisitos para viajar con tu gato</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Documentos</th>
+                                <th>Microchip</th>
+                                <th>Vacunas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-secondary">
+                                <td><a class="a-link" href="#">Certificado sanitario</a></td>
+                                <td><a class="a-link" href="#">Microchip subcutáneo</a></td>
+                                <td><a class="a-link" href="#">Rabia</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div>
+        <div class="container-fluid">
             <a href="#" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a>
             <a href="#" target="_blank"><i class="social-icon fab fa-twitter"></i></a>
             <a href="#" target="_blank"><i class="social-icon fab fa-instagram"></i></a>
@@ -112,6 +134,10 @@
         </div>
     </footer>
 
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
