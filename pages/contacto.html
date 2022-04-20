@@ -15,6 +15,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap CDN Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -22,83 +25,95 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="divLogo">
-            <a href="../index.html">
-                <img class="logo" src="../img/logo.svg" alt="logo">
-            </a>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light ulList">
+                <div class="divLogo">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo" src="../img/logoSmall.svg" alt="logo">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ingresar.html">Ingresar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <label for="menu" class="burgerMenu">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" id="menu">
-        <nav class="navbar">
-            <label for="menu" class="closeMenu">
-                <i class="fa-solid fa-circle-xmark"></i>
-            </label>
-            <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ingresar.html">Ingresar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tienda.html">Tienda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Main -->
     <main>
+        <section class="section1 container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="animate__animated animate__fadeInUp col-xl-8 col-lg-12">
+                        <h1 class="h1Contact">Contáctate con nosotros</h1>
+                        <form class="formContact" action="" method="get">
+                            <p class="blockMobile">
+                                <label for="name">Nombre</label>
+                                <input id="name" type="text" name="name" required>
+                            </p>
+                            <p class="blockMobile">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="email" required>
+                            </p>
+                            <p class="blockMobile">
+                                <label for="phone">Teléfono</label>
+                                <input id="phone" type="number" name="phone">
+                            </p>
+                            <p class="blockMobile">
+                                <label for="topic">Asunto</label>
+                                <input id="topic" type="text" name="topic">
+                            </p>
+                            <p class="block">
+                                <label for="textarea">Déjanos tu mensaje:</label>
+                                <textarea id="textarea" name="instructions" class="textarea" required></textarea>
+                            </p>
+                            <p class="block">
+                                <button type="submit">Enviar</button>
+                            </p>
+                        </form>
+                    </div>
 
-        <section class="sectionContact">
-            <div class="contact-wrapper animate__animated animate__fadeInUp">
-                <div>
-                    <h1 class="h1Contact">Contáctate con nosotros</h1>
-                    <form class="formContact" action="" method="get">
-                        <p class="blockMobile">
-                            <label for="name">Nombre</label>
-                            <input id="name" type="text" name="name" required>
-                        </p>
-                        <p class="blockMobile">
-                            <label for="email">Email</label>
-                            <input id="email" type="email" name="email" required>
-                        </p>
-                        <p class="blockMobile">
-                            <label for="phone">Teléfono</label>
-                            <input id="phone" type="number" name="phone">
-                        </p>
-                        <p class="blockMobile">
-                            <label for="topic">Asunto</label>
-                            <input id="topic" type="text" name="topic">
-                        </p>
-                        <p class="block">
-                            <label for="textarea">Déjanos tu mensaje:</label>
-                            <textarea id="textarea" name="instructions" class="textarea" required></textarea>
-                        </p>
-                        <p class="block">
-                            <button type="submit">Enviar</button>
-                        </p>
-                    </form>
+                    <div class="contact-info col-xl-4 col-lg-12">
+                        <h2>Más información</h2>
+                        <ul class="ulContact">
+                            <li><i class="fas fa-map-marker-alt"></i> Cno. Carrasco 5975</li>
+                            <li><i class="fas fa-phone"></i> (+598) 22446688</li>
+                            <li><i class="fas fa-envelope-open-text"></i><a class="a-link"
+                                    href="mailto:contacto@veterinariatama.com">
+                                    contacto@veterinariatama.com</a></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam sapiente
+                            molestias
+                            quae
+                            vitae dicta, voluptatem illum iusto voluptates ad consectetur fugiat, eos nam
+                            consequuntur
+                            asperiores minus hic minima doloribus!</p>
+                    </div>
                 </div>
-                <div class="contact-info">
-                    <h2>Más información</h2>
-                    <ul class="ulContact">
-                        <li><i class="fas fa-map-marker-alt"></i> Cno. Carrasco 5975</li>
-                        <li><i class="fas fa-phone"></i> (+598) 22446688</li>
-                        <li><i class="fas fa-envelope-open-text"></i> contacto@veterinariatama.com</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas totam sapiente molestias quae
-                        vitae dicta, voluptatem illum iusto voluptates ad consectetur fugiat, eos nam consequuntur
-                        asperiores minus hic minima doloribus!</p>
-                </div>
+            </div>
             </div>
         </section>
 
@@ -106,7 +121,7 @@
 
     <!-- Footer -->
     <footer>
-        <div>
+        <div class="container-fluid">
             <a href="#" target="_blank"><i class="social-icon fab fa-facebook-f"></i></a>
             <a href="#" target="_blank"><i class="social-icon fab fa-twitter"></i></a>
             <a href="#" target="_blank"><i class="social-icon fab fa-instagram"></i></a>
@@ -116,6 +131,10 @@
         </div>
     </footer>
 
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
