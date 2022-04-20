@@ -31,63 +31,18 @@ li {
 /* INICIO HEADER */
 header {
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
     margin: 10px 0 10px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     top: 0;
     position: sticky;
     z-index: 999;
 }
 
-.burgerMenu {
+.ulList {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    font-size: 2rem;
-    background-color: white;
-    border: none;
-    color: #51a4fb;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input#menu {
-    display: none;
-}
-
-input#menu:checked~.navbar {
-    display: block;
-}
-
-.navbar {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
-
-.closeMenu {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-}
-
-.navbar ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .nav-item:hover {
@@ -99,43 +54,29 @@ input#menu:checked~.navbar {
     font-size: 1.5rem;
     font-weight: 100;
     text-decoration: none;
+    padding: 0 10px !important;
+    line-height: 1.1;
 }
 
 .nav-link:hover {
-    color: #37bcf9;
+    color: #37bcf9 !important;
 }
 
 /* Media queries */
 
-@media screen and (min-width: 1024px) {
-
-    .burgerMenu {
-        display: none;
-    }
-
-    .navbar .closeMenu {
-        display: none;
-    }
-
-    .navbar {
-        display: initial;
-        position: inherit;
-    }
-
-    .navbar ul {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
+@media screen and (max-width: 991px) {
     .nav-item {
-        padding: 0 15px;
+        margin: 30px 0;
+    }
+
+    .navbar-toggler {
+        border: none;
     }
 }
 
-@media screen and (min-width: 1200px) {
-
+@media screen and (min-width: 992px) {
     .nav-item {
-        padding: 0 20px 0 60px;
+        padding: 0 19px;
     }
 }
 
@@ -169,33 +110,21 @@ input#menu:checked~.navbar {
     height: 450px;
 }
 
-.div2Index {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 300px 50px;
-    grid-template-areas:
-        "atencion atencion"
-        "clinica telefonica";
-}
-
 .form-buttonIndex {
     width: 280px;
     height: 60px;
-    margin: 0 auto;
-    display: block;
+    margin-top: 30px;
     background-color: #ed494a;
     color: white;
     font-size: 1.1rem;
     font-family: 'Ubuntu', sans-serif;
     border: none;
-    grid-area: clinica;
     border-radius: 10px;
 }
 
 .buttonIndex2 {
     color: #ed494a;
     background-color: white;
-    grid-area: telefonica;
     border-radius: 10px;
 }
 
@@ -218,19 +147,16 @@ h1 {
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 20px;
     color: #103355;
 }
 
 .h1_index {
-    grid-area: atencion;
-    display: flex;
-    align-items: center;
+    margin: 50px 0 60px 0;
     transition: all 300ms ease-in-out;
 }
 
 .h1_index:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 h2 {
@@ -251,89 +177,33 @@ h2 {
 
 @media screen and (max-width: 1200px) {
 
-    .firstSection,
-    .secondSection,
-    .section3 {
-        display: grid;
-        grid-template-columns: 100%;
-        text-align: center;
-    }
-
     .div1Index,
-    .boxVideo {
+    .div2Index,
+    .boxVideo,
+    .boxMap {
         width: 95%;
         margin: 0 auto;
-    }
-
-    .div2Index {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 3fr;
-        grid-template-areas:
-            "atencion"
-            "clinica"
-            "telefonica";
-        grid-gap: 30px;
-        padding-top: 50px;
-    }
-
-    .h1_index {
-        display: flex;
-        justify-content: center;
-        padding: 0 10px;
-    }
-
-    .boxLorem {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 3fr;
-        grid-template-areas:
-            "loremH1"
-            "lorem1"
-            "lorem2";
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    .loremIpsum {
-        grid-area: loremH1;
-    }
-
-    .loremP1 {
-        grid-area: lorem1;
-    }
-
-    .loremP2 {
-        grid-area: lorem2;
     }
 
     .boxMap {
         display: flex;
         justify-content: center;
-        width: 95%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    .firstSection,
-    .secondSection {
-        display: grid;
-        grid-template-columns: calc(50% - 10px) calc(50% - 10px);
-    }
-
-    .section3 {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 500px;
     }
 }
 
 /* FIN MAIN INDEX */
 
 /* INICIO MAIN INGRESAR */
-.h1login {
+.div1Login {
+    display: flex;
+    background-image: url("../img/hands.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 520px;
+}
+
+.h1Login {
     transition: all 300ms ease-in-out;
 }
 
@@ -343,21 +213,15 @@ h2 {
 }
 
 .form {
-    padding: 30px;
-    width: 50%;
     margin: auto;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     text-align: left;
     color: #103355;
     line-height: 1.5;
 }
 
-.boxLogin {
-    width: 100%;
-}
-
 .form-inputs {
-    height: 40px;
+    height: 50px;
     margin-bottom: 20px;
     width: 100%;
     padding: 0.6rem;
@@ -395,35 +259,13 @@ h2 {
     background-color: #f29e9c;
 }
 
-/* Media queries */
-
-@media screen and (max-width: 768px) {
-    .form {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .form {
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .form {
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .form {
-        width: 50%;
-    }
-}
-
 /* FIN MAIN INGRESAR */
 
 /* INICIO MAIN TIENDA */
+.store {
+    padding: 0 10px;
+}
+
 .images {
     width: 49%;
     transition: all 300ms ease-in-out;
@@ -436,6 +278,7 @@ h2 {
 
 .h1Carrier {
     transition: all 300ms ease-in-out;
+    margin-bottom: 50px;
 }
 
 .h1Carrier:hover {
@@ -446,7 +289,7 @@ h2 {
 
 .shortText {
     color: #f37a5f;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .textarea {
@@ -467,21 +310,12 @@ h2 {
 /* FIN MAIN TIENDA */
 
 /* INICIO MAIN SERVICIOS */
-
-.section1Travel {
-    display: grid;
-    grid-template-columns: calc(35% - 10px) calc(65% - 10px);
-}
-
 .div1Travel {
     display: flex;
     background-image: url("../img/cat.png");
     background-position: center;
     background-repeat: no-repeat;
     height: 450px;
-    animation-name: shake;
-    animation-duration: 1.5s;
-    animation-iteration-count: 2;
 }
 
 .div2Travel {
@@ -507,60 +341,18 @@ h2 {
 
 .captionText {
     color: rgb(4, 13, 130);
-    margin: 20px 0;
+    margin: 50px 0;
     text-align: center;
     font-size: 1.5rem;
     transition: all 300ms ease-in-out;
 }
 
-.tableTravel {
-    width: 50%;
-    height: 200px;
-    margin: auto;
-    border: outset;
-    border-color: #1989bd;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-@keyframes shake {
-    0% {
-        transform: rotate(20deg);
-    }
-
-    50% {
-        transform: rotate(-10deg);
-    }
-
-    100% {
-        transform: rotate(20deg);
-    }
-}
-
 /* Media queries */
 
-@media screen and (max-width: 1024px) {
-
-    .section1Travel {
-        display: grid;
-        grid-template-columns: 100%;
+@media screen and (max-width: 1200px) {
+    .h1Travel {
+        margin-top: 50px;
     }
-
-    .div1Travel {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    .travelSection2 {
-        display: grid;
-        grid-template-columns: 100%;
-    }
-
-    .boxTravel {
-        display: flex;
-        justify-content: center;
-    }
-
 }
 
 /* FIN MAIN SERVICIOS */
@@ -573,19 +365,9 @@ h2 {
     text-align: start;
 }
 
-.sectionContact {
-    background-color: #f6f0eb;
-}
-
 .ulContact {
     list-style: none;
     padding: 10px 0;
-    transition: all 300ms ease-in-out;
-}
-
-.ulContact:hover {
-    transform: scale(1.2);
-    background-color: rgb(246, 234, 234);
 }
 
 ul li {
@@ -626,7 +408,6 @@ ul li {
 
 .formContact button {
     background: #ed494a;
-    background: linear-gradient(90deg, rgba(237, 73, 74, 1) 0%, rgba(245, 123, 123, 1) 35%, rgba(237, 73, 74, 1) 100%);
     border: 0;
     font-size: 1.1rem;
     color: white;
@@ -669,21 +450,7 @@ ul li {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .contact-wrapper>* {
-        padding: 1rem;
-    }
-}
-
 @media screen and (min-width: 1024px) {
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .contact-wrapper>* {
-        padding: 2rem;
-    }
 
     .contact-info h2,
     .contact-info ul,
