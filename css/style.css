@@ -19,9 +19,38 @@ h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+    margin-bottom: 40px;
+    transition: all 300ms ease-in-out;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #103355;
+}
+
+h1:hover {
+    color: #f37a5f;
+    transform: scale(1.2);
+}
+
+h2,
+h3 {
+    color: rgb(38, 101, 156);
+    margin-bottom: 50px;
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
 p {
     color: #103355;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 li {
@@ -83,19 +112,13 @@ header {
 /* FIN HEADER */
 
 /* INICIO MAINS */
-.section1,
-.section2,
-.section3 {
+.sectionColor,
+.sectionWhite {
     padding: 3rem 0;
 }
 
-.section1,
-.section3 {
+.sectionColor {
     background-color: #f6f0eb;
-}
-
-.p-content {
-    text-align: justify;
 }
 
 /* FIN MAINS */
@@ -111,9 +134,10 @@ header {
 }
 
 .form-buttonIndex {
-    width: 280px;
+    width: 300px;
     height: 60px;
-    margin-top: 30px;
+    margin: 60px auto;
+    display: block;
     background-color: #ed494a;
     color: white;
     font-size: 1.1rem;
@@ -143,28 +167,6 @@ header {
     align-items: center;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #103355;
-}
-
-.h1_index {
-    margin: 50px 0 60px 0;
-    transition: all 300ms ease-in-out;
-}
-
-.h1_index:hover {
-    transform: scale(1.1);
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
 .a-link {
     text-decoration: none;
 }
@@ -176,6 +178,10 @@ h2 {
 /* Media queries */
 
 @media screen and (max-width: 1200px) {
+
+    h1 {
+        margin-top: 30px;
+    }
 
     .div1Index,
     .div2Index,
@@ -201,15 +207,6 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
     height: 520px;
-}
-
-.h1Login {
-    transition: all 300ms ease-in-out;
-}
-
-.h1Login:hover {
-    color: #f37a5f;
-    transform: scale(1.2);
 }
 
 .form {
@@ -241,7 +238,7 @@ h2 {
     width: 150px;
     height: 40px;
     display: block;
-    margin: 40px auto;
+    margin: 30px auto;
     background-color: #ed494a;
     color: white;
     font-size: 1.1rem;
@@ -276,22 +273,6 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.h1Carrier {
-    transition: all 300ms ease-in-out;
-    margin-bottom: 50px;
-}
-
-.h1Carrier:hover {
-    color: #f37a5f;
-    transform: scale(1.2);
-    background-color: rgb(246, 234, 234);
-}
-
-.shortText {
-    color: #f37a5f;
-    margin: 20px 0;
-}
-
 .textarea {
     width: 100%;
     border: none;
@@ -305,6 +286,22 @@ h2 {
 
 .storeDiv {
     margin: 30px 0;
+}
+
+.pros {
+    color: #2fa8e0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cons {
+    color: #a93537;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.card-title {
+    font-size: 1.4rem;
 }
 
 /* FIN MAIN TIENDA */
@@ -324,35 +321,12 @@ h2 {
     justify-content: center;
 }
 
-.h1Travel {
-    text-align: center;
-    transition: all 300ms ease-in-out;
-}
-
-.h1Travel:hover,
-.captionText:hover {
+.h1Travel:hover {
     color: #6db3b4;
-    transform: scale(1.2);
 }
 
-.pTravel {
-    line-height: 1.6;
-}
-
-.captionText {
-    color: rgb(4, 13, 130);
-    margin: 50px 0;
-    text-align: center;
-    font-size: 1.5rem;
-    transition: all 300ms ease-in-out;
-}
-
-/* Media queries */
-
-@media screen and (max-width: 1200px) {
-    .h1Travel {
-        margin-top: 50px;
-    }
+.h2Travel {
+    font-size: 1.3rem;
 }
 
 /* FIN MAIN SERVICIOS */
