@@ -1,0 +1,151 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center; }
+  body .sectionColor {
+    background-color: #f6f0eb; }
+  body h1 {
+    transition: all 300ms ease-in-out;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #103355; }
+    body h1:hover {
+      color: #f37a5f;
+      transform: scale(1.2); }
+  body h2 {
+    color: #26659c;
+    font-size: 2rem; }
+  body h3 {
+    color: #26659c; }
+  body div, body p {
+    color: #103355;
+    line-height: 1.6; }
+  body .a-link:hover {
+    color: #37bcf9; }
+
+/* INICIO HEADER */
+header {
+  background-color: white;
+  top: 0;
+  position: sticky;
+  z-index: 999; }
+  header .container-fluid .navbar .collapse .navbar-nav .nav-item:hover {
+    transform: scale(1.2); }
+  header .container-fluid .navbar .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 1.5rem;
+    color: #26659c !important; }
+    header .container-fluid .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+      color: #37bcf9 !important; }
+
+/* FIN HEADER */
+/* INICIO MAIN INDEX */
+main .sectionColor .container .row .div1Index {
+  background-image: url("../img/dog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px; }
+
+main .sectionColor .container .row .div2Index .form-buttonIndex {
+  width: 300px;
+  height: 70px;
+  margin: 50px auto;
+  display: block;
+  background-color: #ed494a;
+  font-size: 1.1rem;
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  border-radius: 10px; }
+  main .sectionColor .container .row .div2Index .form-buttonIndex:hover {
+    background-color: #f29e9c !important; }
+
+main .sectionColor .container .row .div2Index .buttonIndex2 {
+  color: #ed494a; }
+
+/* FIN MAIN INDEX */
+/* INICIO MAIN INGRESAR */
+main .sectionColor .container .row .animate__animated .form div .form-inputs {
+  border: none;
+  outline: 0;
+  border-bottom: 1px solid #f29e9c; }
+
+main .sectionColor .container .row .animate__animated .form .form-button {
+  width: 150px;
+  height: 40px;
+  display: block;
+  margin: 30px auto;
+  background-color: #ed494a;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 10px; }
+  main .sectionColor .container .row .animate__animated .form .form-button:hover {
+    background-color: #f29e9c !important; }
+  main .sectionColor .container .row .animate__animated .form .form-button:focus {
+    background-color: #f29e9c !important; }
+
+main .sectionColor .container .row .animate__animated .form .secondButton {
+  color: #ed494a; }
+
+main .sectionColor .container .row .div1Login {
+  background-image: url("../img/hands.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 520px; }
+
+/* FIN MAIN INGRESAR */
+/* INICIO MAIN TIENDA */
+main .pros {
+  color: #2fa8e0; }
+
+main .cons {
+  color: #a93537; }
+
+/* FIN MAIN TIENDA */
+/* INICIO MAIN SERVICIOS */
+main .sectionColor .container .row .div1Travel {
+  background-image: url("../img/cat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px; }
+
+main .sectionColor .container .row .animate__animated .h1Travel:hover {
+  color: #6db3b4; }
+
+/* FIN MAIN SERVICIOS */
+/* INICIO MAIN CONTACTO */
+main .sectionColor .container .row .animate__animated .formContact .blockMobile input {
+  border: none;
+  border-bottom: 1px solid #f29e9c;
+  outline: 0; }
+
+main .sectionColor .container .row .animate__animated .formContact .block textarea {
+  border: none;
+  border-bottom: 1px solid #f29e9c;
+  outline: 0;
+  resize: none; }
+
+main .sectionColor .container .row .animate__animated .formContact .block button {
+  background: #ed494a;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  transition: background-color 300ms ease-out;
+  outline: 0; }
+  main .sectionColor .container .row .animate__animated .formContact .block button:hover, main .sectionColor .container .row .animate__animated .formContact .block button:focus {
+    background: #f29e9c; }
+
+/* FIN MAIN CONTACTO */
+/* INICIO FOOTER */
+footer .container-fluid .social-icon {
+  transition: all 300ms ease-in-out; }
+  footer .container-fluid .social-icon:hover {
+    transform: scale(3) translateY(-3px);
+    color: #37bcf9; }
+
+/* FIN FOOTER */
