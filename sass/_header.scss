@@ -1,0 +1,30 @@
+/* INICIO HEADER */
+header {
+    background-color: white;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    .container-fluid {
+        .navbar {
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                        .nav-link {
+                            font-size: 1.5rem;
+                            color: $colorSecundario !important;
+                            &:hover {
+                                color: $colorHover !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* FIN HEADER */
+
+

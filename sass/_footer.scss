@@ -1,0 +1,15 @@
+/* INICIO FOOTER */
+
+footer {
+    .container-fluid {
+        .social-icon {
+            transition: all 300ms ease-in-out;
+            &:hover {
+                transform: scale(3) translateY(-3px);
+                color: $colorHover;
+            }
+        }
+    }
+}
+
+/* FIN FOOTER */
