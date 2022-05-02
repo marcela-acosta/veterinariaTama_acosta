@@ -34,6 +34,9 @@ header {
   top: 0;
   position: sticky;
   z-index: 999; }
+  header .container-fluid .navbar div .navbar-brand svg {
+    width: 180px;
+    height: 86px; }
   header .container-fluid .navbar .collapse .navbar-nav .nav-item:hover {
     transform: scale(1.2); }
   header .container-fluid .navbar .collapse .navbar-nav .nav-item .nav-link {
@@ -45,27 +48,7 @@ header {
 /* FIN HEADER */
 /* INICIO MAIN INDEX */
 main .sectionColor .container .row .div1Index {
-  background-image: url("../img/dog.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 450px; }
-
-main .sectionColor .container .row .div2Index .form-buttonIndex {
-  width: 300px;
-  height: 70px;
-  margin: 50px auto;
-  display: block;
-  background-color: #ed494a;
-  font-size: 1.1rem;
-  font-family: 'Ubuntu', sans-serif;
-  border: none;
-  border-radius: 10px; }
-  main .sectionColor .container .row .div2Index .form-buttonIndex:hover {
-    background-color: #f29e9c !important; }
-
-main .sectionColor .container .row .div2Index .buttonIndex2 {
-  color: #ed494a; }
+  background-image: url("../img/dog.jpg"); }
 
 /* FIN MAIN INDEX */
 /* INICIO MAIN INGRESAR */
@@ -93,9 +76,6 @@ main .sectionColor .container .row .animate__animated .form .secondButton {
 
 main .sectionColor .container .row .div1Login {
   background-image: url("../img/hands.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   height: 520px; }
 
 /* FIN MAIN INGRESAR */
@@ -109,10 +89,7 @@ main .cons {
 /* FIN MAIN TIENDA */
 /* INICIO MAIN SERVICIOS */
 main .sectionColor .container .row .div1Travel {
-  background-image: url("../img/cat.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 450px; }
+  background-image: url("../img/cat.png"); }
 
 main .sectionColor .container .row .animate__animated .h1Travel:hover {
   color: #6db3b4; }
@@ -142,10 +119,59 @@ main .sectionColor .container .row .animate__animated .formContact .block button
 
 /* FIN MAIN CONTACTO */
 /* INICIO FOOTER */
-footer .container-fluid .social-icon {
+footer .container-fluid .socialMedia__face, footer .container-fluid .socialMedia__twitter, footer .container-fluid .socialMedia__insta, footer .container-fluid .socialMedia__mail {
+  width: 20px;
+  height: 20px;
   transition: all 300ms ease-in-out; }
-  footer .container-fluid .social-icon:hover {
-    transform: scale(3) translateY(-3px);
-    color: #37bcf9; }
+  footer .container-fluid .socialMedia__face:hover, footer .container-fluid .socialMedia__twitter:hover, footer .container-fluid .socialMedia__insta:hover, footer .container-fluid .socialMedia__mail:hover {
+    transform: scale(3) translateY(-3px); }
 
 /* FIN FOOTER */
+/* INICIO MAPS */
+.socialMedia__face {
+  fill: blue; }
+
+.socialMedia__twitter {
+  fill: #2cc0f1; }
+
+.socialMedia__insta {
+  fill: #ff5100; }
+
+.socialMedia__mail {
+  fill: gray; }
+
+.socialMedia__maps {
+  color: #26659c;
+  font-size: 1.1rem; }
+
+/* FIN MAPS */
+/* INICIO EXTENDS */
+.booking, .bookingClinic, .bookingPhone {
+  width: 300px;
+  height: 70px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  border-radius: 10px; }
+
+.bookingClinic {
+  background-color: #ed494a; }
+  .bookingClinic:hover {
+    background-color: #f29e9c; }
+
+.bookingPhone {
+  color: #ed494a; }
+  .bookingPhone:hover {
+    background-color: #f29e9c !important;
+    color: white; }
+
+/* FIN EXTENDS */
+/* INICIO MIXINS */
+.box__mixin {
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+/* FIN MIXINS */
