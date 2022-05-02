@@ -5,29 +5,6 @@ main {
             .row {
                 .div1Index {
                     background-image: url("../img/dog.jpg");
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    height: 450px;
-                }
-                .div2Index {
-                    .form-buttonIndex {
-                        width: 300px;
-                        height: 70px;
-                        margin: 50px auto;
-                        display: block;
-                        background-color: $colorButton;
-                        font-size: 1.1rem;
-                        font-family: 'Ubuntu', sans-serif;
-                        border: none;
-                        border-radius: 10px;
-                        &:hover {
-                            background-color: $colorHoverButton !important;
-                        }
-                    }
-                    .buttonIndex2 {
-                        color: $colorButton;
-                    }
                 }
             }
         }
