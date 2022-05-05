@@ -17,9 +17,6 @@ header {
             .collapse {
                 .navbar-nav {
                     .nav-item {
-                        &:hover {
-                            transform: scale(1.2);
-                        }
                         .nav-link {
                             font-size: 1.5rem;
                             color: $colorSecundario !important;
