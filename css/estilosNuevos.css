@@ -15,8 +15,7 @@ body {
     line-height: 1.5;
     color: #103355; }
     body h1:hover {
-      color: #f37a5f;
-      transform: scale(1.2); }
+      color: #f37a5f; }
   body h2 {
     color: #26659c;
     font-size: 2rem; }
@@ -37,8 +36,6 @@ header {
   header .container-fluid .navbar div .navbar-brand svg {
     width: 180px;
     height: 86px; }
-  header .container-fluid .navbar .collapse .navbar-nav .nav-item:hover {
-    transform: scale(1.2); }
   header .container-fluid .navbar .collapse .navbar-nav .nav-item .nav-link {
     font-size: 1.5rem;
     color: #26659c !important; }
